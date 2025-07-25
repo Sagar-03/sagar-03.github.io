@@ -16,6 +16,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/project-updates.css">
 
   <!--
     - google font link
@@ -177,12 +178,12 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
-
+<!-- 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+          </li> -->
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -203,7 +204,9 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+         <h2 class="h3 skills-title" style="font-size: 35px; color:#FFD700; position: relative;">About Me
+            <span style="content: ''; position: absolute; bottom: -5px; left: 0; width: 80px; height: 3px; background: var(--vegas-gold, #FFD700);"></span>
+          </h2>
         </header>
 
         <section class="about-text">
@@ -219,18 +222,103 @@
 
           </ul>
         </section>
-
-        <p>
-
-        </p>
+        
         <!-- 
           <p>
             Innovative Software Developer | Entrepreneur | MERN Stack Developer | Intern @SAG-DRDO<br />
             Eager to pioneer solutions at the intersection of technology and entrepreneurship.
             Specializing in MERN stack development and driven by a relentless pursuit of knowledge.   
           </p>
-        </section> -->
+        -->
 
+        <!--
+          - skills
+        -->
+        <section  class="skills">
+
+          <h3 class="h3 skills-title" style="font-size: 35px; color:#FFD700; position: relative;">Skills
+            <span style="content: ''; position: absolute; bottom: -5px; left: 0; width: 80px; height: 3px; background: var(--vegas-gold, #FFD700);"></span>
+          </h3>
+
+          <div class="skills-list">
+
+            <!-- <div class="skills-item" data-skill="Spring">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/spring.png" alt="Spring" width="40">
+              </div>
+              <span class="skills-tooltip">Spring</span>
+            </div> -->
+
+            <div class="skills-item" data-skill="React">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/react.png" alt="React" width="40">
+              </div>
+              <span class="skills-tooltip">React</span>
+            </div>
+            
+            <div class="skills-item" data-skill="JavaScript">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/javascript.png" alt="JavaScript" width="40">
+              </div>
+              <span class="skills-tooltip">JavaScript</span>
+            </div>
+            
+            <div class="skills-item" data-skill="HTML5">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/html.png" alt="HTML5" width="40">
+              </div>
+              <span class="skills-tooltip">HTML5</span>
+            </div>
+            
+            <div class="skills-item" data-skill="CSS3">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/css3.png" alt="CSS3" width="40">
+              </div>
+              <span class="skills-tooltip">CSS3</span>
+            </div>
+            
+            <div class="skills-item" data-skill="Java">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/java.png" alt="Java" width="40">
+              </div>
+              <span class="skills-tooltip">Java</span>
+            </div>
+            
+            <div class="skills-item" data-skill="Node.js">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/nodejs.png" alt="Node.js" width="40">
+              </div>
+              <span class="skills-tooltip">Node.js</span>
+            </div>
+
+            <div class="skills-item" data-skill="MongoDB">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/mongodb.png" alt="MongoDB" width="40">
+              </div>
+              <span class="skills-tooltip">MongoDB</span>
+            </div>
+            <div class="skills-item" data-skill="MySQL">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/mysql.png" alt="MySQL" width="40">
+              </div>
+              <span class="skills-tooltip">MySQL</span>
+            </div>
+            
+            <div class="skills-item" data-skill="Git">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/git.png" alt="Git" width="40">
+              </div>
+              <span class="skills-tooltip">Git</span>
+            </div>
+             
+            <div class="skills-item" data-skill="Github">
+              <div class="skills-icon-box">
+                <img src="./assets/images/skills/github.png" alt="Github" width="40">
+              </div>
+              <span class="skills-tooltip">Github</span>
+            </div>
+          </div>
+        </section>
 
         <!--
           - service
@@ -238,77 +326,59 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
-
+          <h3 class="h3 service-title" style="font-size: 35px; color:#FFD700; position: relative;">What I'm Doing
+            <span style="content: ''; position: absolute; bottom: -5px; left: 0; width: 80px; height: 3px; background: var(--vegas-gold, #FFD700);"></span>
+          </h3>
+          
           <ul class="service-list">
-
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="Full Stack Development icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
+                <h4 class="h4 service-item-title">Full-Stack Development</h4>
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Building scalable and responsive web applications using modern technologies like React, Node.js, and MySQL.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-app.svg" alt="Backend Development icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
+                <h4 class="h4 service-item-title">Backend Engineering</h4>
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Crafting secure APIs and handling databases with expertise in Express.js, PHP, and RESTful architecture.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="Client Services icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
+                <h4 class="h4 service-item-title">Client-Based Development</h4>
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Providing tailored solutions for businesses and individuals, including dashboards, portfolios, CMS platforms, and web automation tools.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="Industry Development icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
+                <h4 class="h4 service-item-title">Industry-Based Development</h4>
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Hands-on experience building real-time systems during internships, focusing on scalable web solutions and secure applications.
                 </p>
               </div>
-
             </li>
-
           </ul>
-
         </section>
 
 
@@ -728,10 +798,10 @@
                 </p>
             </li>
 
-
-            <h4 class="h4 timeline-item-title" style="font-size: 17px;">Founder (CASQUE)
-            </h4>
-            <span><b>STARTUP</b></span>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title" style="font-size: 17px;">Founder (CASQUE)
+              </h4>
+              <span><b>STARTUP</b></span>
 
 
               <p class="timeline-text">
@@ -788,12 +858,14 @@
 
               <h4 class="h4 timeline-item-title">Guru Gobind Singh Indraprastha University</h4>
 
-              <span>2022 — 2026</span>
-
-              <p class="timeline-text">
-               Bachelor of Technology in Computer Science and Engineering (CSE) with a CGPA of 8.4/10.
-                <br />
-                <br />
+              
+              <p class="timeline-text" style="font-size: 17px; color: #FFD700;">
+                <b>
+                  Bachelor of Technology in Computer Science and Engineering (CSE) </b>
+                  <br />
+                </p>
+                <span style="display: flex; justify-content: space-between;"><span style="font-size: 16px;  color:white"><b>2022-2026</b></span><span style="color: white;"><b>9.4/10</b></span></span>
+                <p class="timeline-text" style="font-size: 17px; color: white;">
                 <b>Relevant Coursework:</b> Data Structures and Algorithms, Database Management Systems, Operating
                 Systems, Computer Networks, Web Development, Software Engineering, Artificial Intelligence, Machine
                 Learning.
@@ -805,35 +877,24 @@
 
               <h4 class="h4 timeline-item-title">Govt Co-ed Senior Secondary School</h4>
 
-              <span>2020 — 2022</span>
+              <span style="font-size: 18px;"><b>2020 — 2022</b></span>
+              <!-- <p class="timeline-text" style="font-size: 17px; color: white;">
+                <b>Relevant Coursework:</b> Data Structures and Algorithms, Database Management Systems, Operating
+                Systems, Computer Networks, Web Development, Software Engineering, Artificial Intelligence, Machine
+                Learning.
+              </p> -->
 
-              <p class="timeline-text">
-                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
-                omnis..
-              </p>
-
+             
             </li>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school of art and design</h4>
-
-              <span>2002 — 2004</span>
-
-              <p class="timeline-text">
-                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
-                magni dolores
-                eos.
-              </p>
-
-            </li>
+           
 
           </ol>
 
         </section>
 
 
-        <section class="skill">
+        <!-- <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
 
@@ -893,7 +954,7 @@
 
           </ul>
 
-        </section>
+        </section> -->
 
       </article>
 
@@ -905,10 +966,10 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="projects">
@@ -970,111 +1031,195 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+                <img src="./assets/images/project-1.jpg" alt="Student Helper" loading="lazy">
+              </figure>
+              
+              <div>
+                <h3 class="project-title">Student-Helper</h3>
+                <p class="project-category">Full Stack Web development</p>
+                <button class="project-dropdown-toggle">
+                  Details
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="project-description-container">
+                  <p class="project-description">Student Helper is an end-to-end student support platform designed to simplify campus life. It offers centralized academic resources, a peer-to-peer marketplace, content assistance services, and real-time student-to-senior connections. The platform also features modules like night market trading and collaborative study tools, tailored to students' daily needs.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/Sagar-03/Student-Helper/" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://student-helper-yaye.vercel.app/" target="_blank">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
+                <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+              </figure>
+              
+              <div>
                 <h3 class="project-title">Orizon</h3>
-
                 <p class="project-category">Web development</p>
-
-              </a>
+                <button class="project-dropdown-toggle">
+                  Details
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="project-description-container">
+                  <p class="project-description">A modern SaaS platform that provides analytics and data visualization tools to help businesses make data-driven decisions efficiently.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/yourusername/orizon" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
+                <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+              </figure>
+              
+              <div>
                 <h3 class="project-title">Fundo</h3>
-
                 <p class="project-category">Web design</p>
-
-              </a>
+                <button class="project-dropdown-toggle">
+                  Details
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="project-description-container">
+                  <p class="project-description">A crowdfunding platform designed to help creators and entrepreneurs raise funds for their projects through an intuitive and engaging user interface.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/yourusername/fundo" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
+                <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+              </figure>
+              
+              <div>
                 <h3 class="project-title">Brawlhalla</h3>
-
                 <p class="project-category">Applications</p>
-
-              </a>
+                <button class="project-dropdown-toggle">
+                  Details
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="project-description-container">
+                  <p class="project-description">A companion app for the Brawlhalla game providing players with character statistics, match history tracking, and strategy guides to improve gameplay.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/yourusername/brawlhalla-app" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
+                <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+              </figure>
+              
+              <div>
                 <h3 class="project-title">DSM.</h3>
-
                 <p class="project-category">Web design</p>
-
-              </a>
+                <button class="project-dropdown-toggle">
+                  Details
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="project-description-container">
+                  <p class="project-description">A digital style management system that helps teams maintain consistent design language across all projects with an easy-to-use component library.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/yourusername/dsm" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
+                <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+              </figure>
+              
+              <div>
                 <h3 class="project-title">MetaSpark</h3>
-
                 <p class="project-category">Web design</p>
-
-              </a>
+                <button class="project-dropdown-toggle">
+                  Details
+                  <ion-icon name="chevron-down-outline"></ion-icon>
+                </button>
+                <div class="project-description-container">
+                  <p class="project-description">An AR/VR web platform that enables users to create immersive experiences without coding knowledge through an intuitive drag-and-drop interface.</p>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/yourusername/metaspark" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="#" target="_blank">
+                    <ion-icon name="link-outline"></ion-icon>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
@@ -1143,7 +1288,7 @@
 
       <!--
         - #BLOG
-      -->
+      
 
       <article class="blog" data-page="blog">
 
@@ -1343,13 +1488,13 @@
           <h2 class="h2 article-title">Contact</h2>
         </header>
 
-        <section class="mapbox" data-mapbox>
+        <!-- <section class="mapbox" data-mapbox>
           <figure>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
               width="400" height="300" loading="lazy"></iframe>
           </figure>
-        </section>
+        </section> -->
 
         <section class="contact-form">
 
@@ -1389,6 +1534,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/project-dropdown.js"></script>
 
   <!--
     - ionicon link
