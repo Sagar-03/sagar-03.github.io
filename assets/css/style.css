@@ -817,6 +817,10 @@ main {
   line-height: 1.6;
 }
 
+.timeline-text .ul .li{
+  color: white;
+  
+}
 
 /**
  * skills 
