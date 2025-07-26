@@ -1,0 +1,29 @@
+/* Fix for project overlay buttons */
+.project-overlay {
+  z-index: 10;
+}
+
+.project-overlay-button {
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.project-img:hover .project-overlay,
+.project-img.touch-active .project-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Default state - no pointer events so hover works properly */
+.project-overlay {
+  pointer-events: none;
+}
+
+/* On hover/touch active - enable pointer events */
+.project-img:hover .project-overlay,
+.project-img.touch-active .project-overlay {
+  pointer-events: auto;
+}
