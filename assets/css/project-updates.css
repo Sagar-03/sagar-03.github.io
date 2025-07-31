@@ -6,8 +6,23 @@
   border: 1px solid var(--jet);
   transition: var(--transition-1);
   height: auto;
+  width: 100%; /* OK inside grid */
 }
 
+/* Modifier for a wider project tab */
+.project-item.wide {
+  /* Prevent wide from overriding grid inside project-list */
+  max-width: 100%; /* or remove this rule entirely */
+}
+
+/* Ensure project-list handles layout */
+.project-list .project-item.wide {
+  max-width: 100% !important; /* Force override if needed */
+}
+
+/* Optional: You could remove the .wide class in this context if unused */
+
+/* Hover effect */
 .project-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -17,6 +32,7 @@
   padding: 15px;
 }
 
+/* Dropdown content */
 .project-description-container {
   max-height: 0;
   overflow: hidden;
@@ -28,10 +44,7 @@
 
 .project-description-container.active {
   opacity: 1;
-}
-
-.project-description-container.active {
-  max-height: none; /* Allow content to determine height */
+  max-height: none;
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -99,9 +112,6 @@
   transform: rotate(180deg);
 }
 
-/* Expanded project item state */
 .project-item.expanded {
   height: auto;
 }
-
-
