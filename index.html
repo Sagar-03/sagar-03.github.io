@@ -623,7 +623,41 @@
           </div>
 
           <ol class="timeline-list">
+            <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title" style="font-size: 17px;">Software Development Intern
+              </h4>
+              <span style="display: flex; justify-content: space-between;"><span style="font-size: 16px;"><b>Datagen
+                    Internet Service PVt. Ltd.</b></span><span>July' 2025 — Present</span></span>
+
+
+              <p class="timeline-text">
+              <ul style="list-style-type: disc; padding-left: 20px;">
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Building dynamic workflow and visualization systems using React Flow to enhance automation and
+                  interactivity.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Improving existing platforms by integrating new modules and optimizing performance for scalability and
+                  maintainability.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Collaborating with the engineering team to design and implement intuitive UI/UX features for complex system interactions.
+                </li>
+                <li style="color: white; position: relative;">
+                  <span
+                    style="display: inline-block; width: 8px; height: 8px; background-color: #FFD700; border-radius: 50%; position: absolute; left: -20px; top: 8px;"></span>
+                  Working across the full stack with React.js, Node.js, Express.js, MongoDB, and modern tools like Tailwind CSS, GitHub.
+                </li>
+              </ul>
+              </p>
+            </li>
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title" style="font-size: 17px;">Software Development Intern & Project Lead
@@ -1453,8 +1487,10 @@
               <span>Send Message</span>
             </button>
           </form>
-          <div id="form-success-message" style="display:none;color:#4BB543;margin-top:1em;text-align:center;">Thank you! Your message has been sent.</div>
-          <div id="form-error-message" style="display:none;color:#D8000C;margin-top:1em;text-align:center;">Oops! Something went wrong. Please try again later.</div>
+          <div id="form-success-message" style="display:none;color:#4BB543;margin-top:1em;text-align:center;">Thank you!
+            Your message has been sent.</div>
+          <div id="form-error-message" style="display:none;color:#D8000C;margin-top:1em;text-align:center;">Oops!
+            Something went wrong. Please try again later.</div>
 
         </section>
 
@@ -1481,12 +1517,12 @@
 
   <!-- Contact Form AJAX Submission -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       var form = document.getElementById('contact-form');
       var successMsg = document.getElementById('form-success-message');
       var errorMsg = document.getElementById('form-error-message');
-      if(form) {
-        form.addEventListener('submit', function(e) {
+      if (form) {
+        form.addEventListener('submit', function (e) {
           e.preventDefault();
           successMsg.style.display = 'none';
           errorMsg.style.display = 'none';
@@ -1497,19 +1533,19 @@
             headers: {
               'Accept': 'application/json'
             }
-          }).then(function(response) {
+          }).then(function (response) {
             if (response.ok) {
               form.reset();
               successMsg.style.display = 'block';
             } else {
-              response.json().then(function(data) {
+              response.json().then(function (data) {
                 errorMsg.textContent = data.error || 'Oops! Something went wrong. Please try again later.';
                 errorMsg.style.display = 'block';
-              }).catch(function() {
+              }).catch(function () {
                 errorMsg.style.display = 'block';
               });
             }
-          }).catch(function() {
+          }).catch(function () {
             errorMsg.style.display = 'block';
           });
         });
